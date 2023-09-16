@@ -186,10 +186,10 @@
 
             Console.WriteLine("Вам предстоит ввести " + a + " чисел.");
 
-            Console.WriteLine("Введите число: ");
+            Console.WriteLine("Введите первое число: ");
             int w = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите число: ");
+            Console.WriteLine("Введите второе число: ");
             int q = Convert.ToInt32(Console.ReadLine());
 
             if (q < w)
@@ -204,7 +204,7 @@
 
             for (int b = 3; b <= a; b++)
             {
-                Console.WriteLine("Введите число: ");
+                Console.WriteLine("Введите следующее число: ");
                 int e = Convert.ToInt32(Console.ReadLine());
 
                if (e < x)
