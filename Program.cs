@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace Lesson4Loops
+﻿namespace Lesson4Loops
 {
     internal class Program
     {
@@ -178,32 +176,50 @@ namespace Lesson4Loops
             Console.WriteLine("Введите кол-во чисел для сравнения: ");
 
             int a = Convert.ToInt32(Console.ReadLine());
-            int z = 999999;
             int x = 1;
+
+            for (int p = 1; a <= 1; p++)
+            {
+                Console.WriteLine("Введите кол-во чисел, РАВНОЕ ИЛИ БОЛЕЕ ДВУХ, для сравнения: ");
+                a = Convert.ToInt32(Console.ReadLine());
+            }           
 
             Console.WriteLine("Вам предстоит ввести " + a + " чисел.");
 
-            for (int b = 1; b <= a; b++)
+            Console.WriteLine("Введите число: ");
+            int w = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите число: ");
+            int q = Convert.ToInt32(Console.ReadLine());
+
+            if (q < w)
+            {
+                x = q;
+            }
+
+            else
+            {
+                x = w;
+            }
+
+            for (int b = 3; b <= a; b++)
             {
                 Console.WriteLine("Введите число: ");
-                int q = Convert.ToInt32(Console.ReadLine());
-                int qq = q;
+                int e = Convert.ToInt32(Console.ReadLine());
 
-                for (int c = 1; b <= a; c++)
+               if (e < x)
                 {
-                    if (q < z && qq < q)
-                    {
-                        x = q;
-                    }
-                    break;
+                    x = e;
                 }
+
+               else
+                {
+                    continue;
+                }
+
             }
 
             Console.WriteLine("Наименьшее число - " + x);
-
-
-
-
 
         }
     }
