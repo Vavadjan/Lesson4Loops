@@ -224,7 +224,7 @@
 
 
 
-             */
+             
 
 
 
@@ -244,6 +244,124 @@
             }
 
             Console.WriteLine(z);
+
+
+
+            */
+
+
+
+            //Одно из интересных приложений компьютеров — рисование диа­ грамм и гистограмм.
+            //Напишите программу, которая читает пять чисел (каждое между 1 и 30).
+            //Для каждого просчитанного числа ваша программа должна напечатать строку,
+            //содержащую соответ­ ствующее число смежных звездочек.
+            //Например, если ваша програм­ ма прочла число 7, она должна напечатать *******,
+
+            Console.WriteLine("Вам сейчас нужно будет ввести пять чисел. Каждое должно быть в диапазоне от 1 до 30");
+
+            int x = 0;
+            int n1;
+            int n2;
+            int n3;
+            int n4;
+            int n5;
+            string q = "*";
+
+
+
+            do
+            {
+                Console.WriteLine("Введите ПЕРВОЕ число в диапазоне от 1 до 30: ");
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (x < 1 || x > 30);
+
+            n1 = x;
+
+
+
+            do
+            {
+                Console.WriteLine("Введите ВТОРОЕ число в диапазоне от 1 до 30: ");
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (x < 1 || x > 30);
+
+            n2 = x;
+
+
+
+            do
+            {
+                Console.WriteLine("Введите ТРЕТЕЕ число в диапазоне от 1 до 30: ");
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (x < 1 || x > 30);
+
+            n3 = x;
+
+
+
+            do
+            {
+                Console.WriteLine("Введите ЧЕТВЁРТОЕ число в диапазоне от 1 до 30: ");
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (x < 1 || x > 30);
+
+            n4 = x;
+
+
+
+            do
+            {
+                Console.WriteLine("Введите ПЯТОЕ число в диапазоне от 1 до 30: ");
+                x = Convert.ToInt32(Console.ReadLine());
+            }
+
+            while (x < 1 || x > 30);
+
+            n5 = x;
+
+
+
+            for (int z = 1; z <= n1; z++)
+            {
+                Console.Write(q);
+            }
+
+            Console.Write("\n");
+
+
+            for (int z = 1; z <= n2; z++)
+            {
+                Console.Write(q);
+            }
+
+            Console.Write("\n");
+
+            for (int z = 1; z <= n3; z++)
+            {
+                Console.Write(q);
+            }
+
+            Console.Write("\n");
+
+            for (int z = 1; z <= n4; z++)
+            {
+                Console.Write(q);
+            }
+
+            Console.Write("\n");
+
+            for (int z = 1; z <= n5; z++)
+            {
+                Console.Write(q);
+            }
 
 
 
