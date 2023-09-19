@@ -67,8 +67,8 @@
                   i++;/
             }
 
-
-             
+            */
+            /*
 
             //      1       2       3       4       5
             //1     *       *       *       *       *
@@ -78,7 +78,7 @@
             //5     *       *       *       *       *
 
 
-            
+
 
             Console.Write("На сколько цифр рисовать таблицу?");
             int yyy = Convert.ToInt32(Console.ReadLine());
@@ -108,39 +108,48 @@
 
 
 
-            
-
+            */
+            /*
 
 
 
             // рисуем треугольник с пустотой внутри
 
-            Console.WriteLine("Введи длинну катета рисуемого треугольника: ");
-            int uu = Convert.ToInt32(Console.ReadLine());
 
             string tt = "*";
             string kk = "x";
+            int uu;
 
-            for (;uu <= 0;)
-            {                
-                Console.Write("Та не... Напиши норм цифру! От 1 до 30, например!");
+            do
+            {
+                Console.WriteLine("Введи длинну катета рисуемого треугольника: ");
                 uu = Convert.ToInt32(Console.ReadLine());
-            }           
-                Console.Write("\n"+tt +"\n");
+
+                if (uu <= 0 || uu > 30)
+                {
+                    Console.Write("Та не... Напиши норм цифру! От 1 до 30, например!");
+                }
+            }
+
+            while (uu <= 0 || uu > 30);
+
+
+
+            Console.Write("\n" + tt + "\n");
 
             for (int s = 1; uu >= 2 && s <= uu - 2; s++)
             {
                 Console.Write(tt);
-                
-                for (int m = uu - s; s >= 2 && m < uu - 1 ;m++)
+
+                for (int m = uu - s; s >= 2 && m < uu - 1; m++)
                 {
                     Console.Write(kk);
                 }
 
-                Console.Write(tt+"\n");
+                Console.Write(tt + "\n");
             }
 
-            for (int dd = 1; uu >=3 && dd <= uu; dd++)
+            for (int dd = 1; uu >= 3 && dd <= uu; dd++)
             {
                 Console.Write(tt);
             }
@@ -148,8 +157,8 @@
 
 
 
-            
-
+            */
+            /*
 
 
             //Напишите программу, которая постоянно печатает степени целого числа 2, соответственно
@@ -164,8 +173,8 @@
             }
 
 
-
-           
+            */
+            /*
 
 
 
@@ -224,8 +233,8 @@
 
 
 
-             
-
+            */
+            /*
 
 
 
@@ -246,8 +255,8 @@
             Console.WriteLine(z);
 
 
-
-            
+            */
+            /*
 
 
 
@@ -321,6 +330,10 @@
             {
                 Console.WriteLine("Введите ПЯТОЕ число в диапазоне от 1 до 30: ");
                 x = Convert.ToInt32(Console.ReadLine());
+                if(x <= 0 || x > 30)
+                {
+                    Console.WriteLine("Вы ввели число НЕ ИЗ ДИАПАЗОНА! Попробуйте ещё раз!");
+                }
             }
 
             while (x < 1 || x > 30);
@@ -365,8 +378,8 @@
 
 
 
-
             */
+            /*
 
 
 
@@ -394,6 +407,11 @@
                 Console.WriteLine("Зарплата: " + (((x - 40) * y * 1.5) + (40 * y)));
             }
 
-        }
+
+
+
+            */
+
+        } 
     }
 }
